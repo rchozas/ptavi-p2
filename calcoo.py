@@ -6,18 +6,18 @@ import sys
 
 class Calculadora():
 
-    def __init__(self, op1, op2):
+    def __init__(self, operando1, operando2):
 
-        self.op1 = operando1
-        self.op2 = operando2
+        self.operando1 = operando1
+        self.operando2 = operando2
 
     def suma(self):
 
-        return self.op1 + self.op2
+        return self.operando1 + self.operando2
 
     def resta(self):
 
-        return self.op1 - self.op2
+        return self.operando1 - self.operando2
 
 
 if __name__ == "__main__":
