@@ -6,21 +6,22 @@ import sys
 
 class Calculadora():
 
-    def __init__(self,op1,op2):
+    def __init__(self, op1, op2):
 
-        self.op1= operando1
+        self.op1 = operando1
         self.op2 = operando2
 
     def suma(self):
-       
+
         return self.op1 + self.op2
 
-
     def resta(self):
-        
+
         return self.op1 - self.op2
 
+
 if __name__ == "__main__":
+
     try:
         operando1 = float(sys.argv[1])
         operacion = sys.argv[2]
