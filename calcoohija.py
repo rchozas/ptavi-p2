@@ -13,7 +13,7 @@ class CalculadoraHija(calcoo.Calculadora):
 
     def divide(self):
 
-        return self.operando1/ self.operando2
+        return self.operando1 / self.operando2
 
 
 if __name__ == "__main__":
@@ -34,8 +34,10 @@ if __name__ == "__main__":
     elif operacion == "multiplica":
         resultado = calcular.multiplica()
     elif operacion == "divide":
-        resultado = calcular.divide()
-        
+        try:
+            resultado = calcular.divide()
+        except ZeroDivisionError:
+            sys.exit("Division by zero is not allowed")
     else:
         sys.exit("Operación sólo puede ser suma, resta, multiplica o divide.")
 
