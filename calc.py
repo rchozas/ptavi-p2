@@ -13,10 +13,12 @@ def minus(op1, op2):
     """ Function to substract the operands """
     return op1 - op2
 
+
 if __name__ == "__main__":
+
     try:
-        operando1 = int(sys.argv[1])
-        operando2 = int(sys.argv[3])
+        operando1 = float(sys.argv[1])
+        operando2 = float(sys.argv[3])
     except ValueError:
         sys.exit("Error: Non numerical parameters")
 
